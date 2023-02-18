@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 
@@ -6,7 +6,7 @@ import "./App.scss";
 import Header from "./Components/Header/Header";
 // import Footer from "./Components/Footer/Footer";
 
-const Home = React.lazy(() => import("./Routes/Home/HomePage"));
+const Homepage = React.lazy(() => import("./Pages/Homepage/Homepage"));
 
 const App = () => {
 
@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <Suspense>
         <Routes>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" element={<Homepage />} />
         </Routes>
       </Suspense>
     </div>
