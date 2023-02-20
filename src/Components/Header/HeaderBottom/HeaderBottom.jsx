@@ -15,7 +15,7 @@ const HeaderBottom = () => {
             </div>
             <div className="col-md-9 d-flex justify-content-end">
                 <div className="navbar-nav">
-                    <Link>Nədir?</Link>
+                    <Link className="active">Nədir?</Link>
                     <Link>Özəlliklər</Link>
                     <Link>Müştərilər</Link>
                     <Link>Sektorlar</Link>

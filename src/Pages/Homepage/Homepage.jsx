@@ -11,7 +11,7 @@ const Homepage = () => {
             <div className="col-md-5 content-side">
               <h1>Bütün işlərinizi bir hesabda birləşdirdik! </h1>
               <p>Müxtəlif sektorda olan sahibkarlara biznes proseslərinin idarəsini asanlaşdıracaq rəqəmsal biznes həlləri</p>
-              <button class="btn btn-outline">Elə indi təklif al!</button>
+              <button className="btn btn-outline">Elə indi təklif al!</button>
             </div>
             <div className="col-md-7 image-side"></div>
           </div>

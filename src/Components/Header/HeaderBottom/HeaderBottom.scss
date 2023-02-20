@@ -1,5 +1,7 @@
+@import "../../../variables";
+
 .header-bottom {
-    padding: 15px 0;
+  padding: 15px 0;
 
   .logo {
     svg {
@@ -8,12 +10,32 @@
   }
 
   .navbar-nav {
-    a{
-        color: #041624;
-        font-size: 16px;
-        margin-left: 20px;
-        text-transform: uppercase;
-        font-weight: 500;
+    a {
+      color: #041624;
+      font-size: 16px;
+      margin-left: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      position: relative;
+
+      &::after{
+        content: '';
+        position: absolute;
+        left:50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 0%;
+        background-color: $main;
+        transition: .4s;
+        border-radius: 3px;
+      }
+
+      &.active{
+        &::after{
+          width: 100%;
+        }
+      }
     }
   }
 }
