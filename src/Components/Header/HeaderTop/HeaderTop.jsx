@@ -14,7 +14,12 @@ const HeaderTop = () => {
               +994509990460
             </Link>
           </div>
-          <div className="col-6 d-flex justify-content-end">
+          <div className="col-6 d-flex justify-content-end align-items-center">
+            <div className="lang-switcher">
+              <Link className="active">AZ</Link>
+              <Link>EN</Link>
+              <Link>RU</Link>
+            </div>
             <Link to="/!" className="btn btn-ish">
               Təklif al
             </Link>
