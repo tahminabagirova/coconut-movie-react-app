@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 
@@ -12,8 +12,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
       <Suspense>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Homepage />} />
         </Routes>
