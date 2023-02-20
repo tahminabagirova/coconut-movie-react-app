@@ -4730,3 +4730,14 @@ a {
     color: #fff;
   }
 }
+
+.btn-brown{
+  background-color: $brown;
+  border-color: $brown;
+  color:#fff;
+
+  &:hover{
+    background-color: $brown_hover;
+    border-color: $brown_hover;
+  }
+}
