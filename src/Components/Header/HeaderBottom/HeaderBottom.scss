@@ -1,4 +1,5 @@
-@import "../../../variables";
+@import "../../../Assets/Style/Variables";
+@import "../../../Assets/Style/Mixins";
 
 .header-bottom {
   padding: 15px 0;
@@ -36,6 +37,23 @@
           width: 100%;
         }
       }
+
+      @include desktop-down{
+        font-size: 14px;
+      }
+    }
+
+    @include tablet-landscape-down {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      background: #fff;
+      flex-direction: column;
+      // display: flex;
+      display: none;
     }
   }
 }
