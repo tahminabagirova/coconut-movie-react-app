@@ -3,15 +3,29 @@
 .header-top{
     padding: 10px 0;
 
-    .phone {
+    .header-mini-link {
         display: flex;
         align-items: center;
         color:#000;
+        transition: .4s;
+
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+
+        &:hover{
+            color: $main;
+
+            svg{
+                fill: $main;
+            }
+        }
 
         svg{
             height: 20px;
             width: 20px;
             margin-right: 10px;
+            transition: .4s;
         }
     }
 
