@@ -4,9 +4,17 @@
 .header-bottom {
   padding: 15px 0;
 
-  .logo {
-    svg {
-      width: 200px;
+  .logo-parent {
+    .logo {
+      svg {
+        width: 200px;
+      }
+    }
+
+    @include tablet-landscape-down {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
@@ -53,6 +61,36 @@
       background: #fff;
       flex-direction: column;
       // display: flex;
+      display: none;
+    }
+  }
+
+  .hamburger-menu-btn{
+    background-color: transparent;
+    display: flex;
+    border: 0;
+
+    svg{
+      height: 35px;
+      width: 35px;
+    }
+
+    &.active{
+      #dashTop {
+        transform: translateY(16.75%) translateX(-16.9%) rotate(45deg);
+      }
+  
+      #dashBottom {
+        transform: translateY(16.75%) translateX(16.9%) rotate(135deg);
+      }
+  
+      #dashMiddle {
+        transform: rotate(135deg);
+        opacity: 0;
+      }
+    }
+
+    @include tablet-landscape-up {
       display: none;
     }
   }
