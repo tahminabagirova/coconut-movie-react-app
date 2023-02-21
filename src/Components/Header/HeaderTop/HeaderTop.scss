@@ -1,7 +1,24 @@
 @import "../../../Assets/Style/Variables";
+@import "../../../Assets/Style/Mixins";
 
 .header-top{
     padding: 10px 0;
+    
+    .left-side{
+        @include tablet-landscape-down {
+            display: none;
+        }
+    }
+
+    .right-side{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include tablet-landscape-down {
+            justify-content: space-between;
+        }
+    }
 
     .header-mini-link {
         display: flex;
@@ -26,6 +43,10 @@
             width: 20px;
             margin-right: 10px;
             transition: .4s;
+        }
+
+        @include tablet-landscape-down {
+            display: none;
         }
     }
 

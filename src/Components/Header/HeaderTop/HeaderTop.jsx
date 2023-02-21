@@ -9,7 +9,7 @@ const HeaderTop = () => {
     <div className="header-top">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-6 d-flex align-items-center">
+          <div className="col-6 d-flex align-items-center left-side">
             <Link to="/!" className="header-mini-link">
               <Phone/>
               +994509990460
@@ -20,7 +20,7 @@ const HeaderTop = () => {
               info@ishesabi.com
             </Link>
           </div>
-          <div className="col-6 d-flex justify-content-end align-items-center">
+          <div className="col-lg-6 col-12 right-side">
             <div className="lang-switcher">
               <Link className="active">AZ</Link>
               <Link>EN</Link>

@@ -1,4 +1,5 @@
 @import "../../Assets/Style/Variables";
+@import "../../Assets/Style/Mixins";
 
 .main-section{
 
@@ -8,11 +9,29 @@
             color: $main;
             font-size: 36px;
             font-weight: 500;
+
+            @include tablet-landscape-down {
+                font-size: 29px;
+                line-height: 1.2;
+                margin-bottom: 10px;
+            }
+
+            @include phone-only {
+                font-size: 24px;
+            }
         }
 
         p {
             margin-bottom: 20px;
             font-size: 20px;
+
+            @include tablet-landscape-down {
+                font-size: 18px;
+            }
+
+            @include phone-only {
+                font-size: 16px;
+            }
         }
     }
 
@@ -22,5 +41,10 @@
         background-position: right;
         background-size: 100%;
         background-repeat: no-repeat;
+
+        @include tablet-landscape-down {
+            background-position: top;
+            margin-top: 20px;
+        }
     }
 }
