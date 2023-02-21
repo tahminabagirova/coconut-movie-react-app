@@ -3,6 +3,14 @@
 
 .header-bottom {
   padding: 15px 0;
+  background-color: #fff;
+  
+  &.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 4%);
+  }
 
   .logo-parent {
     .logo {

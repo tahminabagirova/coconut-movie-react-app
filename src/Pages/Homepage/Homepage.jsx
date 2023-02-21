@@ -1,12 +1,13 @@
 import React from "react";
 import "./Homepage.scss";
+import { Link } from "react-router-dom";
 // import { Swiper, SwiperSlide } from "react-swipe";
 // import { Pagination, Navigation } from "react-swipe";
 
 const Homepage = () => {
   return (
     <div className="container">
-      <div className="main-section">
+      <section className="main-section">
           <div className="row align-items-center">
             <div className="col-md-5 content-side">
               <h1>Bütün işlərinizi bir hesabda birləşdirdik! </h1>
@@ -16,7 +17,13 @@ const Homepage = () => {
             </div>
             <div className="col-md-7 image-side"></div>
           </div>
-      </div>
+      </section>
+
+      <section className="what-is-it-section" id="whatIsIt">
+          <h2>Bütün biznes ehtiyaclarınız bir platformada</h2>
+          <p>Müxtəlif sektorda olan sahibkarlara biznes proseslərinin  idarəsini <br /> asanlaşdıracaq rəqəmsal biznes həlləri</p>
+          <Link className="btn btn-outline" to="">Sistemimizlə tanış olun</Link>
+      </section>
     </div>
   );
 };
