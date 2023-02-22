@@ -4741,3 +4741,19 @@ a {
     border-color: $brown_hover;
   }
 }
+
+.section-title {
+  text-align: center;
+}
+
+.section-ish{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .section-title+p{
+    text-align: center;
+  }
+}
