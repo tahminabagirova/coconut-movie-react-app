@@ -33,7 +33,7 @@ const HeaderBottom = () => {
               <div className="navbar-nav">
                 <Link activeClass="active" to="whatIsIt" smooth={true} spy={true}>Nədir?</Link>
                 <Link activeClass="active" to="features" smooth={true} spy={true}>Özəlliklər</Link>
-                <Link activeClass="active" to="" smooth={true} spy={true}>Müştərilər</Link>
+                <Link activeClass="active" to="partners" smooth={true} spy={true}>Müştərilər</Link>
                 <Link activeClass="active" to="" smooth={true} spy={true}>Sektorlar</Link>
                 <Link activeClass="active" to="" smooth={true} spy={true}>Paketlər</Link>
                 <Link activeClass="active" to="" smooth={true} spy={true}>Bloqlar</Link>

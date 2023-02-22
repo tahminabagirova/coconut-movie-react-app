@@ -98,3 +98,19 @@
     width: 600px;
     height: 600px;
 }
+
+.partners-section {
+    .logo-partners {
+        img{
+            width: 70%;
+            height: 200px;
+            object-fit: contain;
+            filter: grayscale(1);
+            
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+
+    }
+}
