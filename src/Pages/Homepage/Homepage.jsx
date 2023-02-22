@@ -51,27 +51,34 @@ const Homepage = () => {
 
       <section className="partners-section section-ish" id="partners">
         <div className="container">
-          <h2 className="section-title">Müştərilər</h2>
           <div className="row">
-            <div className="col-md-3 d-flex justify-content-center">
-              <Link className="logo-partners" to={"https://kamurgroup.az/"} target="_blank" rel="noreferrer">
-                <img src={kamurLogo} alt="" />
-              </Link>
+            <div className="col-md-5 d-flex flex-column justify-content-center">
+              <h2 className="section-title">Müştərilər</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque laudantium porro maiores repudiandae esse rem id sunt ex tempore voluptates, atque praesentium at laboriosam velit delectus molestias possimus adipisci qui.</p>
             </div>
-            <div className="col-md-3 d-flex justify-content-center">
-              <Link className="logo-partners" to={"https://yer.cloud/"} target="_blank" rel="noreferrer">
-                <img src={yerCloudlogo} alt="" />
-              </Link>
-            </div>
-            <div className="col-md-3 d-flex justify-content-center">
-              <Link className="logo-partners" to={"https://binahesabi.com/"} target="_blank" rel="noreferrer">
-                <img src={binaHesabiLogo} alt="" />
-              </Link>
-            </div>
-            <div className="col-md-3 d-flex justify-content-center">
-              <Link className="logo-partners">
-                <img src={morLogo} alt="" />
-              </Link>
+            <div className="col-md-7">
+              <div className="row">
+                <div className="col-md-6 d-flex justify-content-center">
+                <Link className="logo-partners" to={"https://kamurgroup.az/"} target="_blank" rel="noreferrer">
+                  <img src={kamurLogo} alt="" />
+                </Link>
+                </div>
+                <div className="col-md-6 d-flex justify-content-center">
+                  <Link className="logo-partners" to={"https://yer.cloud/"} target="_blank" rel="noreferrer">
+                    <img src={yerCloudlogo} alt="" />
+                  </Link>
+                </div>
+                <div className="col-md-6 d-flex justify-content-center">
+                  <Link className="logo-partners" to={"https://binahesabi.com/"} target="_blank" rel="noreferrer">
+                    <img src={binaHesabiLogo} alt="" />
+                  </Link>
+                </div>
+                <div className="col-md-6 d-flex justify-content-center">
+                  <Link className="logo-partners">
+                    <img src={morLogo} alt="" />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

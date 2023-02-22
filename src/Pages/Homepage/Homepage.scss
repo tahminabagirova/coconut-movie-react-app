@@ -100,9 +100,30 @@
 }
 
 .partners-section {
+    .section-title {
+        text-align: left;
+    }
+
+    p{
+        text-align: left !important;
+    }
+
     .logo-partners {
+        position: relative;
+
+        // &::after {
+        //     position: absolute;
+        //     content: '';
+        //     right: 0;
+        //     bottom: 0;
+        //     height: 40px;
+        //     width: 40px;
+        //     border-radius: 50%;
+        //     background-color: #77a0d5;
+        // }
+
         img{
-            width: 70%;
+            width: 200px;
             height: 200px;
             object-fit: contain;
             filter: grayscale(1);
@@ -111,6 +132,5 @@
                 filter: grayscale(0);
             }
         }
-
     }
 }
