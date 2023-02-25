@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./HeaderBottom.scss";
 import Ishesabi from "../../Svgs/Logo/Ishesabi";
 import HamburgerMenu from "../../Svgs/Icons/HamburgerMenu";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 const HeaderBottom = () => {

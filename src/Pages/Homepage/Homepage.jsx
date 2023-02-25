@@ -5,12 +5,22 @@ import kamurLogo from "../../Assets/Img/Logo/kamur.png";
 import binaHesabiLogo from "../../Assets/Img/Logo/binahesabi.png";
 import yerCloudlogo from "../../Assets/Img/Logo/yercloud.png";
 import morLogo from "../../Assets/Img/Logo/mor.jpg";
+import "../../Components/FeaturesCard/FeaturesCard.scss";
+import FeaturesCard from "../../Components/FeaturesCard/FeaturesCard";
+import DblChevron from "../../Components/Svgs/Icons/DblChevron";
+
+import { motion, useViewportScroll, useTransform } from "framer-motion";
+
 // import { Swiper, SwiperSlide } from "react-swipe";
 // import { Pagination, Navigation } from "react-swipe";
 
 const Homepage = () => {
+  const { scrollYProgress } = useViewportScroll()
+  const scale = useTransform(scrollYProgress, [1, 2], [0.2, 2]);
+
   return (
     <div className="home-page-main">
+
       <div className="container">
         <section className="main-section">
             <div className="row align-items-center">
@@ -33,17 +43,31 @@ const Homepage = () => {
             <Link className="btn btn-outline" to="">Sistemimizlə tanış olun</Link>
           </div>
         <div className="shape2"></div>
+        <button className="btn-up"><DblChevron/></button>
       </section>
 
       <section className="features-section section-ish" id="features">
         <div className="container">
-          <h2 className="section-title">Özəlliklər</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aspernatur consequatur ea <br /> aperiam voluptatibus doloribus laboriosam. </p>
           <div className="row">
-            <div className="col-md-4">
-              <div className="card">
-              
+            <div className="col-md-7 d-flex">
+              <div className="row flex-column m-0">
+                  {/* <motion.div className="col-12" 
+                  style={{
+                    scaleY: scrollYProgress
+                  }} >
+                    <FeaturesCard/>
+                  </motion.div> */}
+                <div className="col-12"><FeaturesCard/></div>
+                <div className="col-12"><FeaturesCard/></div>
               </div>
+              <div className="row flex-column m-0 mt-5">
+                <div className="col-12"><FeaturesCard/></div>
+                <div className="col-12"><FeaturesCard/></div>
+              </div>
+            </div>
+            <div className="col-md-5 d-flex flex-column justify-content-center">
+              <h2 className="section-title">Özəlliklər</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aspernatur consequatur ea <br /> aperiam voluptatibus doloribus laboriosam. </p>
             </div>
           </div>
         </div>
