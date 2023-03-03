@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Homepage.scss";
 import { Link } from "react-router-dom";
 import kamurLogo from "../../Assets/Img/Logo/kamur.png";
@@ -7,6 +7,7 @@ import yerCloudlogo from "../../Assets/Img/Logo/yercloud.png";
 import morLogo from "../../Assets/Img/Logo/mor.jpg";
 import "../../Components/FeaturesCard/FeaturesCard.scss";
 import FeaturesCard from "../../Components/FeaturesCard/FeaturesCard";
+import SectorsCard from "../../Components/SectorsCard/SectorsCard";
 import DblChevron from "../../Components/Svgs/Icons/DblChevron";
 
 import { motion, useViewportScroll, useTransform } from "framer-motion";
@@ -18,9 +19,24 @@ const Homepage = () => {
   const { scrollYProgress } = useViewportScroll()
   const scale = useTransform(scrollYProgress, [1, 2], [0.2, 2]);
 
+  const [showBtnTop, setScroll] = useState(false);
+  useEffect(() => {
+   window.addEventListener("scroll", () => {
+     setScroll(window.scrollY > 50);
+   });
+  }, []);
+
+  const scrollTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+  };
+
   return (
     <div className="home-page-main">
-
+      <button className={`btn-up ${showBtnTop ? "show" : ""}`} onClick={scrollTop}><DblChevron/></button>
+      
       <div className="container">
         <section className="main-section">
             <div className="row align-items-center">
@@ -43,7 +59,6 @@ const Homepage = () => {
             <Link className="btn btn-outline" to="">Sistemimizlə tanış olun</Link>
           </div>
         <div className="shape2"></div>
-        <button className="btn-up"><DblChevron/></button>
       </section>
 
       <section className="features-section section-ish" id="features">
@@ -105,6 +120,50 @@ const Homepage = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="sectors-section section-ish align-items-start" id="sectors">
+        <div className="container">
+          {/* Avtomobil
+          Elektronik
+          Tikinti və İnşaat
+          logistika
+          IT xidmətləri
+          Mebel və Ev tekstili */}
+          <h2 className="section-title">Sektorlar</h2>
+          <p>Müxtəlif sektorda olan sahibkarlara biznes proseslərinin  idarəsini <br /> asanlaşdıracaq rəqəmsal biznes həlləri</p>
+
+          <div className="row justify-content-center mt-4">
+            <div className="col-md-3 d-flex justify-content-center">
+              <SectorsCard/>
+            </div>
+            <div className="col-md-3 d-flex justify-content-center">
+              <SectorsCard/>
+            </div>
+            <div className="col-md-3 d-flex justify-content-center">
+              <SectorsCard/>
+            </div>
+            <div className="col-md-3 d-flex justify-content-center">
+              <SectorsCard/>
+            </div>
+            <div className="col-md-3 d-flex justify-content-center">
+              <SectorsCard/>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section className="box-section section-ish" id="">
+        <div className="container">
+          {/* Avtomobil
+          Elektronik
+          Tikinti və İnşaat
+          logistika
+          IT xidmətləri
+          Mebel və Ev tekstili */}
+          <h2 className="section-title">Paketlər</h2>
+          <p>Müxtəlif sektorda olan sahibkarlara biznes proseslərinin  idarəsini <br /> asanlaşdıracaq rəqəmsal biznes həlləri</p>
         </div>
       </section>
     </div>

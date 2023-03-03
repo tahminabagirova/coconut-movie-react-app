@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 *,
@@ -4697,8 +4697,8 @@ a {
   padding: 0.375rem 0.75rem;
   font-size: 14px;
   border-radius: 0.25rem;
-  border:3px solid;
-  transition: .4s;
+  border: 3px solid;
+  transition: 0.4s;
   text-transform: uppercase;
 
   &.disabled,
@@ -4714,29 +4714,29 @@ a {
   color: #fff;
   border-color: $main;
 
-  &:hover{
+  &:hover {
     background-color: $main_hover;
     border-color: $main_hover;
   }
 }
 
-.btn-outline{
+.btn-outline {
   background-color: #fff;
   color: $main;
   border-color: $main;
 
-  &:hover{
+  &:hover {
     background-color: $main;
     color: #fff;
   }
 }
 
-.btn-brown{
+.btn-brown {
   background-color: $brown;
   border-color: $brown;
-  color:#fff;
+  color: #fff;
 
-  &:hover{
+  &:hover {
     background-color: $brown_hover;
     border-color: $brown_hover;
   }
@@ -4747,21 +4747,70 @@ a {
   margin-bottom: 15px;
 }
 
-.section-ish{
+.section-ish {
   min-height: 100vh;
+  // padding: 20px 0;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  .section-title+p{
+  .section-title + p {
     text-align: center;
   }
 }
 
-.card{
+.card {
   background-color: #fff;
   box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 4%);
   margin-bottom: 20px;
   padding: 15px;
+}
+
+.btn-up {
+  position: fixed;
+  right: 45px;
+  bottom: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  // animation: animation 2s infinite;
+  z-index: 5;
+  background-color: #f3f9ff;
+  padding: 10px;
+  border-radius: 4px;
+  transition: .4s;
+  transform: scale(0);
+
+  svg {
+    height: 25px;
+    width: 25px;
+    transition: .4s;
+    // fill: $main;
+  }
+
+  &:hover {
+    background-color: $main;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  &.show{
+    transform: scale(1);
+  }
+
+  // @keyframes animation {
+  //   0% {
+  //     transform: translateY(0px);
+  //   }
+  //   50% {
+  //     transform: translateY(-25px);
+  //   }
+  //   100% {
+  //     transform: translateY(0px);
+  //   }
+  // }
 }

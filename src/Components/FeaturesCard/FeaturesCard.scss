@@ -1,5 +1,7 @@
 .features-card {
     margin-bottom: 25px;
+    z-index: 1;
+    position: relative;
     
     svg {
         height: 100px;
