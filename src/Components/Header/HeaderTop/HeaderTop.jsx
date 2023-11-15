@@ -12,12 +12,12 @@ const HeaderTop = () => {
           <div className="col-6 d-flex align-items-center left-side">
             <Link to="/!" className="header-mini-link">
               <Phone/>
-              +994509990460
+              +994999999999
             </Link>
 
             <Link to="/!" className="header-mini-link">
               <Envelope/>
-              info@ishesabi.com
+              info@coconutmovie.com
             </Link>
           </div>
           <div className="col-lg-6 col-12 right-side">
@@ -27,7 +27,7 @@ const HeaderTop = () => {
               <Link>RU</Link>
             </div>
             <Link to="/!" className="btn btn-ish">
-              Təklif al
+              Apply
             </Link>
           </div>
         </div>

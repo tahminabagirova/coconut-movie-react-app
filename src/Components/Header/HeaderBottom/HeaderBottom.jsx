@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./HeaderBottom.scss";
-import Ishesabi from "../../Svgs/Logo/Ishesabi";
+import coconut from "../../../Assets/Img/Logo/coconut.webp";
 import HamburgerMenu from "../../Svgs/Icons/HamburgerMenu";
 import { Link } from "react-scroll";
 
@@ -23,7 +23,7 @@ const HeaderBottom = () => {
         <div className="row align-items-center">
             <div className="col-lg-3 col-12 logo-parent">
                 <Link className="logo" to="">
-                    <Ishesabi/>
+                  <img src={coconut} alt="" />
                 </Link>
                 <button className="hamburger-menu-btn">
                   <HamburgerMenu/>

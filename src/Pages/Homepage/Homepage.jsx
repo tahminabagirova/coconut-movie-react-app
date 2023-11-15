@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Homepage.scss";
 import { Link } from "react-router-dom";
-import kamurLogo from "../../Assets/Img/Logo/kamur.png";
-import binaHesabiLogo from "../../Assets/Img/Logo/binahesabi.png";
-import yerCloudlogo from "../../Assets/Img/Logo/yercloud.png";
-import morLogo from "../../Assets/Img/Logo/mor.jpg";
+// import kamurLogo from "../../Assets/Img/Logo/kamur.png";
+// import binaHesabiLogo from "../../Assets/Img/Logo/binahesabi.png";
+// import yerCloudlogo from "../../Assets/Img/Logo/yercloud.png";
+// import morLogo from "../../Assets/Img/Logo/mor.jpg";
 import "../../Components/FeaturesCard/FeaturesCard.scss";
 import FeaturesCard from "../../Components/FeaturesCard/FeaturesCard";
 import SectorsCard from "../../Components/SectorsCard/SectorsCard";
@@ -41,10 +41,10 @@ const Homepage = () => {
         <section className="main-section">
             <div className="row align-items-center">
               <div className="col-md-5 content-side">
-                <h1>Bütün işlərinizi bir hesabda birləşdirdik! </h1>
-                <p>Müxtəlif sektorda olan sahibkarlara biznes proseslərinin idarəsini asanlaşdıracaq rəqəmsal biznes həlləri</p>
-                <button className="btn btn-outline mr-3">Elə indi təklif al!</button>
-                <button className="btn btn-brown">Pulsuz test et</button>
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>
+                <p>Sunt est nihil consequatur, dolore, facere possimus blanditiis.</p>
+                <button className="btn btn-outline mr-3">Apply</button>
+                <button className="btn btn-brown">Free test</button>
               </div>
               <div className="col-md-7 image-side"></div>
             </div>
@@ -54,8 +54,8 @@ const Homepage = () => {
       <section className="what-is-it-section section-ish" id="whatIsIt">
         <div className="shape"></div>
           <div className="container">
-            <h2 className="section-title">Bütün biznes ehtiyaclarınız bir platformada</h2>
-            <p>Müxtəlif sektorda olan sahibkarlara biznes proseslərinin  idarəsini <br /> asanlaşdıracaq rəqəmsal biznes həlləri</p>
+            <h2 className="section-title">Lorem ipsum dolor, sit amet consectetur adipisicing.</h2>
+            <p>Sunt est nihil consequatur, dolore, facere possimus blanditiis.</p>
             <Link className="btn btn-outline" to="">Sistemimizlə tanış olun</Link>
           </div>
         <div className="shape2"></div>
@@ -99,22 +99,22 @@ const Homepage = () => {
               <div className="row">
                 <div className="col-md-6 d-flex justify-content-center">
                 <Link className="logo-partners" to={"https://kamurgroup.az/"} target="_blank" rel="noreferrer">
-                  <img src={kamurLogo} alt="" />
+                  {/* <img src={kamurLogo} alt="" /> */}
                 </Link>
                 </div>
                 <div className="col-md-6 d-flex justify-content-center">
                   <Link className="logo-partners" to={"https://yer.cloud/"} target="_blank" rel="noreferrer">
-                    <img src={yerCloudlogo} alt="" />
+                    {/* <img src={yerCloudlogo} alt="" /> */}
                   </Link>
                 </div>
                 <div className="col-md-6 d-flex justify-content-center">
                   <Link className="logo-partners" to={"https://binahesabi.com/"} target="_blank" rel="noreferrer">
-                    <img src={binaHesabiLogo} alt="" />
+                    {/* <img src={binaHesabiLogo} alt="" /> */}
                   </Link>
                 </div>
                 <div className="col-md-6 d-flex justify-content-center">
                   <Link className="logo-partners">
-                    <img src={morLogo} alt="" />
+                    {/* <img src={morLogo} alt="" /> */}
                   </Link>
                 </div>
               </div>
