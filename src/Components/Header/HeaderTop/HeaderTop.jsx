@@ -27,7 +27,7 @@ const HeaderTop = () => {
               <Link>RU</Link>
             </div>
             <Link to="/!" className="btn btn-ish">
-              Apply
+              Cart
             </Link>
           </div>
         </div>

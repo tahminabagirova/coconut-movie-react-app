@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Homepage.scss";
 import { Link } from "react-router-dom";
-// import kamurLogo from "../../Assets/Img/Logo/kamur.png";
-// import binaHesabiLogo from "../../Assets/Img/Logo/binahesabi.png";
-// import yerCloudlogo from "../../Assets/Img/Logo/yercloud.png";
-// import morLogo from "../../Assets/Img/Logo/mor.jpg";
 import "../../Components/FeaturesCard/FeaturesCard.scss";
 import FeaturesCard from "../../Components/FeaturesCard/FeaturesCard";
 import SectorsCard from "../../Components/SectorsCard/SectorsCard";
@@ -51,7 +47,7 @@ const Homepage = () => {
         </section>
       </div>
 
-      <section className="what-is-it-section section-ish" id="whatIsIt">
+      <section className="what-is-it-section section-coconut">
         <div className="shape"></div>
           <div className="container">
             <h2 className="section-title">Lorem ipsum dolor, sit amet consectetur adipisicing.</h2>
@@ -61,7 +57,7 @@ const Homepage = () => {
         <div className="shape2"></div>
       </section>
 
-      <section className="features-section section-ish" id="features">
+      <section className="features-section section-coconut">
         <div className="container">
           <div className="row">
             <div className="col-md-7 d-flex">
@@ -88,7 +84,7 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="partners-section section-ish" id="partners">
+      <section className="partners-section section-coconut">
         <div className="container">
           <div className="row">
             <div className="col-md-5 d-flex flex-column justify-content-center">
@@ -123,7 +119,7 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="sectors-section section-ish align-items-start" id="sectors">
+      <section className="sectors-section section-coconut align-items-start">
         <div className="container">
           {/* Avtomobil
           Elektronik
@@ -154,7 +150,7 @@ const Homepage = () => {
         </div>
       </section>
       
-      <section className="box-section section-ish" id="">
+      <section className="box-section section-coconut" id="">
         <div className="container">
           {/* Avtomobil
           Elektronik
