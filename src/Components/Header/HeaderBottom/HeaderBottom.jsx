@@ -31,8 +31,9 @@ const HeaderBottom = () => {
             </div>
             <div className="col-lg-9 d-flex justify-content-end">
               <div className="navbar-nav">
-                <Link activeClass="active" to="whatIsIt">Home</Link>
-                <Link to="features">Watchlist</Link>
+                <Link activeClass="active">Home</Link>
+                <Link>Movies</Link>
+                <Link>Watchlist</Link>
               </div>
             </div>
         </div>
