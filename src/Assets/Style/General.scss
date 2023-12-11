@@ -1,0 +1,50 @@
+@import "/src/assets/Style/Variables";
+
+.section-title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .section-coconut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .section-title + p {
+      text-align: center;
+    }
+  }
+  
+  .btn-up {
+    position: fixed;
+    right: 45px;
+    bottom: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+    background-color: #f3f9ff;
+    padding: 10px;
+    border-radius: 4px;
+    transition: .4s;
+    transform: scale(0);
+  
+    svg {
+      height: 25px;
+      width: 25px;
+      transition: .4s;
+    }
+  
+    &:hover {
+      background-color: $main;
+  
+      svg {
+        fill: #fff;
+      }
+    }
+  
+    &.show{
+      transform: scale(1);
+    }
+  }

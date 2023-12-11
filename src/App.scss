@@ -1,4 +1,4 @@
-@import "/src/Assets/Style/Variables";
+@import "/src/assets/Style/Variables";
 
 * {
   margin: 0;
@@ -4729,88 +4729,4 @@ a {
     background-color: $main;
     color: #fff;
   }
-}
-
-.btn-brown {
-  background-color: $brown;
-  border-color: $brown;
-  color: #fff;
-
-  &:hover {
-    background-color: $brown_hover;
-    border-color: $brown_hover;
-  }
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.section-coconut {
-  min-height: 100vh;
-  // padding: 20px 0;
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .section-title + p {
-    text-align: center;
-  }
-}
-
-.card {
-  background-color: #fff;
-  box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 4%);
-  margin-bottom: 20px;
-  padding: 15px;
-}
-
-.btn-up {
-  position: fixed;
-  right: 45px;
-  bottom: 25px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  // animation: animation 2s infinite;
-  z-index: 5;
-  background-color: #f3f9ff;
-  padding: 10px;
-  border-radius: 4px;
-  transition: .4s;
-  transform: scale(0);
-
-  svg {
-    height: 25px;
-    width: 25px;
-    transition: .4s;
-    // fill: $main;
-  }
-
-  &:hover {
-    background-color: $main;
-
-    svg {
-      fill: #fff;
-    }
-  }
-
-  &.show{
-    transform: scale(1);
-  }
-
-  // @keyframes animation {
-  //   0% {
-  //     transform: translateY(0px);
-  //   }
-  //   50% {
-  //     transform: translateY(-25px);
-  //   }
-  //   100% {
-  //     transform: translateY(0px);
-  //   }
-  // }
 }

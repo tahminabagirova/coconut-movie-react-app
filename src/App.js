@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import "./App.scss";
 
 // components
-import Header from "./Components/Header/Header";
-// import Footer from "./Components/Footer/Footer";
+import Header from "./components/header/Header";
+// import Footer from "./components/Footer/Footer";
 
-const Homepage = React.lazy(() => import("./Pages/Homepage/Homepage"));
+const Homepage = React.lazy(() => import("./pages/Homepage/Homepage"));
 
 const App = () => {
 

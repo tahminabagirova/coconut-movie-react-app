@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./HeaderBottom.scss";
-import coconut from "../../../Assets/Img/Logo/coconut.webp";
+import coconut from "../../../assets/Img/Logo/coconut.webp";
 import HamburgerMenu from "../../Svgs/Icons/HamburgerMenu";
 import { Link } from "react-scroll";
 
@@ -31,9 +31,9 @@ const HeaderBottom = () => {
             </div>
             <div className="col-lg-9 d-flex justify-content-end">
               <div className="navbar-nav">
-                <Link activeClass="active">Home</Link>
-                <Link>Movies</Link>
-                <Link>Watchlist</Link>
+                <Link activeClass="active" to="">Home</Link>
+                <Link to="">Movies</Link>
+                <Link to="">Watchlist</Link>
               </div>
             </div>
         </div>

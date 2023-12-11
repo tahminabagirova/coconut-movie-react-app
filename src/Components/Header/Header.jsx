@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
-import HeaderTop from "../Header/HeaderTop/HeaderTop";
-import HeaderBottom from "./HeaderBottom/HeaderBottom";
+import HeaderTop from "../header/HeaderTop/HeaderTop";
+import HeaderBottom from "../header/HeaderBottom/HeaderBottom";
 
 
 const Header = () => {
@@ -13,4 +13,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header; 

@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Homepage.scss";
+import "../../assets/Style/General.scss";
+import ApiService from "../../api/axios";
 // import { Link } from "react-router-dom";
-import DblChevron from "../../Components/Svgs/Icons/DblChevron";
-import MovieCard from "../../Components/MovieCard/MovieCard";
+import DblChevron from "../../components/Svgs/Icons/DblChevron";
+import MovieCard from "../../components/movieCard/MovieCard";
 
 // import { Swiper, SwiperSlide } from "react-swipe";
 // import { Pagination, Navigation } from "react-swipe";
@@ -10,9 +12,15 @@ import MovieCard from "../../Components/MovieCard/MovieCard";
 const Homepage = () => {
   const [showBtnTop, setScroll] = useState(false);
   const [movies, setMovies] = useState([]);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 50);
+    });
+
+    ApiService.get("3/discover/movie?api_key=407de4dfd89db769eddb39c9ab90c177").then((resp) => {
+      setMovies(resp.data.results);
+      console.log(resp.data.results);
     });
   }, []);
 
@@ -32,33 +40,23 @@ const Homepage = () => {
         <DblChevron />
       </button>
 
-      <div className="container">
-        <section className="main-section">
-          <div className="row align-items-center">
-            <div className="col-md-5 content-side">
-              <h1>Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>
-              <p>
-                Sunt est nihil consequatur, dolore, facere possimus blanditiis.
-              </p>
-              <button className="btn btn-outline mr-3">Apply</button>
-              <button className="btn btn-brown">Free test</button>
-            </div>
-            <div className="col-md-7 image-side"></div>
-          </div>
-        </section>
-
+      <div className="container coconut-section">
         <section>
           <div className="row">
-            {movies.map((movie) => {
+            <div className="col-12">
+              <div className="section-title">Discovered Movies</div>
+            </div>
+          {movies.length !== 0 ? (
+            movies.map((item) => {
               return (
-                <div className="col-md-4" key={movie}>
-                  <MovieCard movie={movie} />
+                <div className="col-md-2" key={item.id}>
+                  <MovieCard movie={item} />
                 </div>
               );
-            })}
-
-
-
+            })
+          ) : (
+            <h2>No data</h2>
+          )}
           </div>
         </section>
       </div>
